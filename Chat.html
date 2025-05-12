@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NCloud HelpCenter | Chat, Connect, Feedback </title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.8.0/firebase-database.js"></script>
+    <script src="./js/jquery/dist/jquery.min.js"></script>
+    <script src="./js/dictionary-chatbotCurrentReaload.js"></script>
+    <link rel="stylesheet" href="/css/chatUx.css">
+</head>
+<body >
+    <div class="loading-banner-type-overflow-remove-instant_div-chatUx">
+        <div class="getstartedbtn-helloncloud-pop-header-active"></div>
+    </div>
+    <div class="full-content-mainDiv">
+        <div class="ncloud-lgo-custom-left">
+            <img src="./assets/static/header.png" alt="NcloudEncryption" draggable="false" loading="lazy" class="bottomidden-icoset-main">
+    <h3> Help & Support</h3>
+    </div>
+    <div class="full-content-left">
+        <div class="full-content-left-content Fill-_mediaDef">
+            <div class="chatWAgent">
+                <div class="chatWAgent-top">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                        <path d="M12.5 16a3.5 3.5 0 1 0 0-7 3.5 3.5 0 0 0 0 7Zm1.679-4.493-1.335 2.226a.75.75 0 0 1-1.174.144l-.774-.773a.5.5 0 0 1 .708-.708l.547.548 1.17-1.951a.5.5 0 1 1 .858.514ZM11 5a3 3 0 1 1-6 0 3 3 0 0 1 6 0Z"/>
+                        <path d="M2 13c0 1 1 1 1 1h5.256A4.493 4.493 0 0 1 8 12.5a4.49 4.49 0 0 1 1.544-3.393C9.077 9.038 8.564 9 8 9c-5 0-6 3-6 4Z"/>
+                      </svg>
+                    <h3>Connect with a verified Help Centre.</h3>
+                </div>
+                <div class="chatWAgent-content">
+                    <div class="userDetailR_context-div">
+                        <h3>Error Code<span>*</span></h3>
+                        <input type="password" placeholder="Start Typing Here..">
+                    </div>
+                    <div class="userDetailR_context-div">
+                        <h3>Email<span>*</span></h3>
+                        <input type="email" placeholder="Start Typing Here..">
+                    </div>
+                    <div class="userDetailR_context-div">
+                        <h3>Software</h3> 
+                        <input type="text" placeholder="Start Typing Here..">   
+                    </div>
+                    <div class="userDetailR_context-div">
+                        <h3>Description<span>*</span></h3>
+                        <textarea placeholder="Start Typing Here.."></textarea>
+                    </div>
+                    
+                </div>
+                <div class="chatWAgent-bottom"></div>
+            </div>
+        </div>
+        <div class="crDiv_gugbHVFUtvkUTvMGJv-os-NCLD">
+            ©2025 NekshaDeSilva, Management.
+        </div>
+    </div>
+    <div class="full-content-right">
+    <div class="chatBot-header-ux">
+        <div class="chatBot-header-ux-left">
+            <span class="authBotOSender-Identicatiion_output-Utill">
+                <div class="chatSender-agent-img-profileDiv"></div>
+            <span class="authBotOSender-Identicatiion_output-text">
+            Neksha 
+            </span>
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                <path d="M10.067.87a2.89 2.89 0 0 0-4.134 0l-.622.638-.89-.011a2.89 2.89 0 0 0-2.924 2.924l.01.89-.636.622a2.89 2.89 0 0 0 0 4.134l.637.622-.011.89a2.89 2.89 0 0 0 2.924 2.924l.89-.01.622.636a2.89 2.89 0 0 0 4.134 0l.622-.637.89.011a2.89 2.89 0 0 0 2.924-2.924l-.01-.89.636-.622a2.89 2.89 0 0 0 0-4.134l-.637-.622.011-.89a2.89 2.89 0 0 0-2.924-2.924l-.89.01-.622-.636zm.287 5.984-3 3a.5.5 0 0 1-.708 0l-1.5-1.5a.5.5 0 1 1 .708-.708L7 8.793l2.646-2.647a.5.5 0 0 1 .708.708z"/>
+              </svg>
+            </span>
+        </div>
+        <div class="chatBot-header-ux-right">
+            Responds Automatically.
+        </div>
+    </div>
+    <div class="chatbot-div">
+        <div class="chatbot-div-content">
+        <div class="div-whatsNew">
+            <div class="div-whatsnew-top">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M0 2a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2h-2.5a1 1 0 0 0-.8.4l-1.9 2.533a1 1 0 0 1-1.6 0L5.3 12.4a1 1 0 0 0-.8-.4H2a2 2 0 0 1-2-2V2zm3.5 1a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h9a.5.5 0 0 0 0-1h-9zm0 2.5a.5.5 0 0 0 0 1h5a.5.5 0 0 0 0-1h-5z"/>
+                  </svg>
+                <h3><span>Chat</span> With a<br> <span>Dictionary</span>*</h3>
+            </div>
+            <div class="div-whatsnew-bottom">
+                <h3 class="bottomhidden-font-size-def">
+                    <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-lock-fill" viewBox="0 0 16 16">
+                        <path d="M8 1a2 2 0 0 1 2 2v4H6V3a2 2 0 0 1 2-2zm3 6V3a3 3 0 0 0-6 0v4a2 2 0 0 0-2 2v5a2 2 0 0 0 2 2h6a2 2 0 0 0 2-2V9a2 2 0 0 0-2-2z"/>
+                      </svg>
+                        Encrypted.
+                    </h3>
+            </div>
+        </div>
+        </div>
+        
+        <div class="chatbot-div-bar">
+            <div class="chatbot-div-bar-input">
+                <svg style="fill: rgb(230,230,230); margin-right: 2%; cursor: text;" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" viewBox="0 0 16 16">
+                    <path d="M8.932.727c-.243-.97-1.62-.97-1.864 0l-.071.286a.96.96 0 0 1-1.622.434l-.205-.211c-.695-.719-1.888-.03-1.613.931l.08.284a.96.96 0 0 1-1.186 1.187l-.284-.081c-.96-.275-1.65.918-.931 1.613l.211.205a.96.96 0 0 1-.434 1.622l-.286.071c-.97.243-.97 1.62 0 1.864l.286.071a.96.96 0 0 1 .434 1.622l-.211.205c-.719.695-.03 1.888.931 1.613l.284-.08a.96.96 0 0 1 1.187 1.187l-.081.283c-.275.96.918 1.65 1.613.931l.205-.211a.96.96 0 0 1 1.622.434l.071.286c.243.97 1.62.97 1.864 0l.071-.286a.96.96 0 0 1 1.622-.434l.205.211c.695.719 1.888.03 1.613-.931l-.08-.284a.96.96 0 0 1 1.187-1.187l.283.081c.96.275 1.65-.918.931-1.613l-.211-.205a.96.96 0 0 1 .434-1.622l.286-.071c.97-.243.97-1.62 0-1.864l-.286-.071a.96.96 0 0 1-.434-1.622l.211-.205c.719-.695.03-1.888-.931-1.613l-.284.08a.96.96 0 0 1-1.187-1.186l.081-.284c.275-.96-.918-1.65-1.613-.931l-.205.211a.96.96 0 0 1-1.622-.434L8.932.727zM8 12.997a4.998 4.998 0 1 1 0-9.995 4.998 4.998 0 0 1 0 9.996z"/>
+                  </svg>
+                <input type="text" class="chatbot-input" placeholder="Start Typing Here.." id="chatbot-input" autocomplete="off">
+            </div>
+            <div class="chatbot-div-bar-keys">
+                <svg role="button" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="event__clear-rolebutton-input-chatbot" viewBox="0 0 16 16">
+                    <path d="M4.646 4.646a.5.5 0 0 1 .708 0L8 7.293l2.646-2.647a.5.5 0 0 1 .708.708L8.707 8l2.647 2.646a.5.5 0 0 1-.708.708L8 8.707l-2.646 2.647a.5.5 0 0 1-.708-.708L7.293 8 4.646 5.354a.5.5 0 0 1 0-.708z"/>
+                  </svg>
+                <div role="button" class="sendbtn-chatbot-div">send</div>
+            </div>
+        </div>
+    </div>
+    </div>
+    </div>
+    <script src="./js/words_dictionary.v01.built23.js"></script>
+</body>
+</html>
